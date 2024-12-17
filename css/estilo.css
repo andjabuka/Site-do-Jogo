@@ -48,7 +48,7 @@ header{
 section.main{
 	position: relative;
 	min-height: 800px;
-	background-image: url('../imagem\ site.jpg');
+	background-image: url('../images/background.jpg');
 	background-size: cover;
 	background-position: center;
 
