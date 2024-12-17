@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Site do Jogo</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
 </head>
 <body>
 
@@ -14,8 +18,12 @@
 			<div class="logo">
 				<h3><i class="fa-solid fa-scroll"></i>Herdeiros da Aurora</h3>
 			</div>
-			<div class="menu">
-				<a class="active-menu" href="">Home</a>
+			<button class="hamburger" id="hamburger">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+			<ul class="nav-menu" id="nav-menu"></ul>
+				
+				<a href="">Home</a>
 				<a href="">Sobre</a>
 				<a href="">Site</a>
 				<a href="">Contato</a>
@@ -71,7 +79,7 @@
 
 
 </section>
-
+<script src="./js/index.js"></script>
 <footer>
 	<p> Todos os direitos reservados</p>
 </footer>

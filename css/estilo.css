@@ -25,7 +25,14 @@ header{
 	width:100%;
 	justify-content: space-between;
 }
-
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 .menu-container a.active-menu{
 	background-color:#4B0082;
 }
@@ -114,6 +121,41 @@ footer{
 	padding: 8px;
 }
 
-@media screen {
-	
-}
+@media (max-width: 768px) {
+
+	header{
+		width: 100%;
+		position: relative;
+		height: auto;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+	section.main {
+		width: 55%;
+		height: auto;
+	}
+
+	.section .Heróis{
+		width: 55%;
+		height: auto;
+	}
+    .hamburger {
+       display: block; /* Mostra o botão hambúrguer */
+    }
+	.menu-container a {
+		display: none; /* Esconde o menu */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px;
+	}
+
+	.menu-container a.active {
+		display: flex;
+	}
+}	
